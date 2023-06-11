@@ -1,0 +1,112 @@
+.FontSearchPage {
+  margin-top: 150px;
+
+  & .font_search_header {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    word-break: keep-all;
+  }
+
+  & .font_search_info_text {
+    font-size: 17px;
+    margin-bottom: 3px;
+  }
+
+  & .font_search_dropdown {
+    margin-right: 17px;
+  }
+  & .font_search_box {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 800px) {
+    & .font_search_box {
+      flex-direction: column;
+    }
+  }
+
+  & .font_search_text {
+    display: flex;
+  }
+
+  & .search_icon_box {
+    cursor: pointer;
+    margin-left: 5px;
+  }
+
+  // & .search_icon_box:hover {
+  // border: 1px solid gray;
+  // box-sizing: border-box;
+  // border-radius: 10px;
+  // }
+
+  & ul {
+    list-style: none;
+  }
+
+  & .font_search_opt ul {
+    display: flex;
+    padding-left: 0;
+    flex-wrap: wrap;
+  }
+
+  & .font_search_opt li {
+    border-right: 1px solid #b9b6b6;
+    padding-right: 30px;
+    padding-left: 30px;
+    cursor: pointer;
+    color: #919191;
+  }
+
+  & .font_search_opt li:first-child {
+    padding-left: 10px;
+  }
+
+  & .font_search_opt li:hover {
+    text-decoration: underline;
+  }
+
+  & .font_search_opt_select {
+    color: #33383e !important;
+    font-weight: bold;
+  }
+
+  & .font_search_opt {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 600px) {
+    & .font_search_opt {
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+  }
+
+  & .font_text_editor {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    border: 1px solid #919191;
+    height: 40px;
+    padding: 0 14px;
+  }
+
+  & .font_text_editor input {
+    margin: 0;
+    border: none;
+    background: none;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+    padding: 0 6px;
+    outline: none;
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,61 @@
+.Footer {
+  & .brand_name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  & .info_name {
+    font-size: 10px;
+  }
+
+  & .brand_info_box {
+    margin-right: 20px;
+  }
+
+  & .brand_info_box img {
+    user-select: none;
+  }
+
+  & .brand_info {
+    font-size: 11px;
+  }
+
+  & .precaution_info {
+    font-size: 13px;
+  }
+
+  & .precaution_header {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  & ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__container {
+    padding-top: 90px;
+    padding-bottom: 65px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap-reverse;
+  }
+
+  @media (max-width: 1024px) {
+    &__container {
+      max-width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    &__container {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}

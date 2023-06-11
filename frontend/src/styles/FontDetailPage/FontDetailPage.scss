@@ -1,0 +1,492 @@
+.FontDetailPage {
+  margin-top: 100px;
+
+  & .first_row_box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin: 100px 0 50px;
+  }
+
+  & .font_name {
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+
+  & .font_user {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+
+  & .font_info_box {
+    margin-top: 10px;
+  }
+
+  & .font_popular_info_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 20px;
+    font-family: "GongGothicMedium";
+  }
+
+  & .font_favorite_box {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(209, 213, 219, 1);
+    border-radius: 0.225rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: rgba(107, 114, 128, 1);
+    margin-bottom: 10px;
+  }
+
+  & .font_favorite_box:hover {
+    background-color: rgba(249, 250, 251, 0.4);
+  }
+
+  & .font_favorite_download_info_box {
+    display: flex;
+  }
+
+  & .font_favorite_count {
+    margin-right: 10px;
+  }
+
+  & .second_row_box {
+    margin-top: 30px;
+  }
+
+  & .font_oneline_header {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: "GongGothicMedium";
+    // font-weight: bold;
+  }
+
+  & .font_oneline_fix {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 10px;
+    color: #7e7d7d;
+  }
+
+  & .font_oneline_fix:hover {
+    color: black;
+  }
+
+  & .modify_oneline_textarea {
+    width: 100%;
+    padding: 30px 100px;
+    background: transparent;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    line-height: 1.2;
+    white-space: pre-line;
+    text-align: center;
+    font-size: 30px;
+    box-sizing: border-box;
+    border-color: #1976d2;
+  }
+
+  & .font_oneline_mention {
+    width: 100%;
+    padding: 30px 100px;
+    background: transparent;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    line-height: 1.2;
+    white-space: pre-line;
+    text-align: center;
+    font-size: 30px;
+    box-sizing: border-box;
+    border-color: #ffb9b9;
+  }
+
+  & .third_row_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 810px;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 1024px) {
+    & .third_row_box {
+      flex-direction: column;
+      height: inherit;
+      align-items: center;
+    }
+
+    & .text_area_box {
+      width: 100% !important;
+      margin: 15px 0 30px !important;
+    }
+
+    & .text_area_box textarea {
+      width: 100% !important;
+      padding: 30px !important;
+      height: 50vw !important;
+      min-height: 300px !important;
+    }
+
+    & .control_panel {
+      width: 100% !important;
+      margin-left: 0 !important;
+      max-width: 800px !important;
+    }
+
+    & .font_oneline_mention {
+      padding: 30px !important;
+      font-size: 23px;
+    }
+
+    & .modify_oneline_textarea {
+      padding: 30px !important;
+      font-size: 23px;
+    }
+
+    & .font_popular_info_box {
+      justify-content: end;
+      width: 100%;
+    }
+
+    & .font_spacing_picker_box {
+      width: 230px !important;
+    }
+  }
+
+  & .text_area_box {
+    width: 60%;
+  }
+
+  & .text_area_box textarea {
+    width: 100%;
+    height: 810px;
+    padding: 100px 15%;
+    letter-spacing: 1px;
+    line-height: 1;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 15px;
+    font-size: 24px;
+    background-image: url("../../assets/textarea_img/background_1.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    box-sizing: border-box;
+    cursor: grab;
+  }
+
+  & .text_area_box textarea::placeholder {
+    font-size: 30px;
+  }
+
+  & .control_panel {
+    margin-left: 30px;
+    height: 810px;
+    padding: 20px 30px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    width: 35%;
+    min-width: 360px;
+    max-width: 500px;
+    font-family: "GongGothicMedium";
+  }
+
+  & .font_editor_panel_header {
+    // font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  & .font_editor_panel_first_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  & .font_align_box {
+    width: 100%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 1px;
+    margin-left: 10px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: box-shadow 0.2s linear;
+  }
+
+  & .font_align_box:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  }
+
+  & .font_align_box ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  & .font_align_box li {
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 17px;
+  }
+
+  & .font_align_box .select_font_align {
+    background-color: #efefef;
+  }
+
+  & .font_editor_panel_second_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+
+  & .font_color_select_box {
+    padding: 8px 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    border-radius: 3px;
+    transition: box-shadow 0.2s linear;
+    width: 30%;
+  }
+
+  & .font_color_select_box:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  }
+
+  & .font_color_current {
+    width: 37px;
+    height: 37px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid #cacaca;
+    background-color: black;
+  }
+
+  & .font_spacing_select_box {
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    text-align: center;
+    // font-weight: bold;
+    height: 55px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.2s linear;
+  }
+
+  & .font_spacing_select_box:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  }
+
+  & .textarea_background_img_box {
+    margin-top: 30px;
+  }
+
+  & .textarea_background_img_box_header {
+    // font-weight: bold;
+    font-size: 16px;
+  }
+
+  & .textarea_background_img_grid {
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+  }
+
+  & .textarea_background_img_grid .bg_img {
+    text-align: center;
+  }
+
+  & .textarea_background_img_grid img {
+    background-position: 50%;
+    background-size: contain;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s linear;
+  }
+
+  & .textarea_background_img_grid img:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+  }
+
+  & .sns_header {
+    // font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  & .sns_icon_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  & .sns_img_box {
+    width: 108px;
+    height: 48px;
+    border-radius: 18px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.2s linear;
+    cursor: pointer;
+  }
+
+  & .sns_img_box:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  }
+
+  & .font_download_box {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 9px 0 9px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    // font-weight: bold;
+    // border: 2px solid rgb(69, 160, 225);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    color: #ffb9b9;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s linear;
+    align-items: center;
+  }
+
+  & .font_download_box:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+  }
+
+  & .font_make_time {
+    font-family: "GongGothicMedium";
+    margin-top: 10px;
+  }
+
+  & .font_make_header {
+    // font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  & .font_make_button {
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 0 9px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    // font-weight: bold;
+    background-color: #ffb9b9;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s linear;
+  }
+
+  & .font_make_button:hover {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+  }
+
+  & .font_size_30 {
+    font-size: 30px;
+  }
+
+  & .font_size_20 {
+    font-size: 20px;
+  }
+
+  & .font_weight_bold {
+    // font-weight: bold;
+  }
+
+  & .font_picker_box {
+    display: none;
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    left: 0;
+  }
+
+  & .font_spacing_picker_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    background-color: white;
+    border-radius: 10px;
+    display: none;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+      0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+      0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  }
+
+  & .spacing_picker_header {
+    // font-weight: bold;
+    font-size: 16px;
+  }
+
+  & .full_width_height {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+  }
+
+  & .clipboard_check {
+    position: fixed;
+    bottom: 3%;
+    background-color: #ffb9b9;
+    padding: 10px 30px;
+    border-radius: 15px;
+    visibility: hidden;
+    color: white;
+    width: 190px;
+    font-family: "GongGothicMedium";
+  }
+}

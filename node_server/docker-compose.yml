@@ -1,0 +1,14 @@
+version: "3"
+services:
+    nodeexpress:
+        image: nodeexpressimg
+        ports:
+                - 28080:28080
+        build:
+                context: .
+                dockerfile: Dockerfile
+        volumes:
+                - /var/lib/jenkins/FONT:/node_server/FONT
+        container_name: nodeexpress-compose
+        extra_hosts:
+                - "host.docker.internal:host-gateway"

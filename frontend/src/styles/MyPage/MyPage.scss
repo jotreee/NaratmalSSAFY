@@ -1,0 +1,221 @@
+.Mypage{
+    height: 100vh;
+    &__Fontselect{
+        display: flex;
+        flex-flow: row;
+        
+        &__Edit{
+            margin-right: 100px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        &__Edit:hover{
+            color:gray
+        }
+        &__My{
+            margin-right: 100px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        &__My:hover{
+            color:gray
+        }
+        &__Favorite{
+            margin-right:100px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        &__Favorite:hover{
+            color:gray
+        }
+        &__Download{
+            margin-right:100px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        &__Download:hover{
+            color:gray
+        }
+    }
+    &__Profile{
+        display:flex;
+        flex-flow: column;
+        justify-content: center;
+        overflow: auto;
+        height: 23%;
+        margin-top: 100px;
+
+        &__Title{
+            font-size: xx-large;
+            font-weight: bold;
+            margin-bottom: 3%;
+        }
+        &__Content{
+            font-size: large;
+            margin-bottom: 5px;
+        }
+    }
+    &__EditTitle{
+        text-align: center;
+        font-size: xx-large;
+        margin-top: 2%;
+        font-weight: bold;
+    }
+    &__Edituserinfo{
+        margin-top: 3%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        &__Space{
+            margin-top:10px
+        }
+    }
+    &__Myfont{
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        height: 80%;
+        overflow-y:scroll;
+    }
+    &__Myfont::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/
+    }
+    &__Myfavoritesfont{
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        height: 80%;
+        overflow-y:scroll;
+    }
+    &__Myfavoritesfont::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/
+    }
+    &__Mydownloadfont{
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin: 0 auto;        
+        height: 80%;
+        overflow-y:scroll;
+    }
+    &__Mydownloadfont::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/
+    }
+    &__Alert{
+        margin-top: 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__Myfont{
+            &__Title{
+                font-size: xx-large;
+                font-weight: bold;
+                margin-bottom: 5%;
+            }
+            &__Content{
+                font-size: large;
+                margin-bottom: 10px;
+            }
+            &__Button{
+                font-size: large;
+                font-weight: bold;
+                margin-top: 5%;
+                text-align: center;
+                cursor: pointer;
+                max-width: 350px;
+                width: 80%;
+                height: 42px;
+                line-height: 42px;
+                background-color: #8383d3;
+                color: black;
+                border-radius: 10px;
+            }
+        }
+        &__Favorite{
+            &__Title{
+                font-size: xx-large;
+                font-weight: bold;
+                margin-bottom: 5%;
+            }
+            &__Content{
+                font-size: large;
+                margin-bottom: 10px;
+            }
+            &__Button{
+                font-size: large;
+                font-weight: bold;
+                margin-top: 5%;
+                text-align: center;
+                cursor: pointer;
+                max-width: 350px;
+                width: 80%;
+                height: 42px;
+                line-height: 42px;
+                background-color: #8383d3;
+                color: black;
+                border-radius: 10px;
+            }
+        }
+        &__Download{
+            &__Title{
+                font-size: xx-large;
+                font-weight: bold;
+                margin-bottom: 5%;
+            }
+            &__Content{
+                font-size: large;
+                margin-bottom: 10px;
+            }
+            &__Button{
+                font-size: large;
+                font-weight: bold;
+                margin-top: 5%;
+                text-align: center;
+                cursor: pointer;
+                max-width: 350px;
+                width: 80%;
+                height: 42px;
+                line-height: 42px;
+                background-color: #8383d3;
+                color: black;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+.checkNickname{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    max-width: 350px;
+    width: 80%;
+    height: 42px;
+    line-height: 42px;
+    background-color: #8383d3;
+    color: black;
+    border-radius: 10px;
+}
+.checkNicknamecenter{
+    height: 42px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.Nickname{
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    width: 56px;
+    margin-top:132px;
+    margin-left: 10px;
+    height: 56px;
+    line-height: 56px;
+    background-color: #8383d3;
+    color: black;
+    border-radius: 10px;
+}
+

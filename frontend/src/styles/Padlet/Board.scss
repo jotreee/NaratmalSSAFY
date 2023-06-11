@@ -1,0 +1,95 @@
+.Padlet{
+    height: 100vh;
+    &__Top{
+        margin-top: 100px;
+        position:absolute;
+        z-index: 1;
+        &__Title{
+            font-size: xx-large;
+            font-weight: bold;
+            margin-bottom: 10%;
+        }
+        &__Content{
+            margin-bottom: 5px;
+        }
+    }
+    &__main{
+        display:flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        position : relative;
+        margin-left: 15%;
+        top:0;
+        &__map{
+            width: 40%;
+            height: 80%;
+        }
+    
+        &__Seoul{
+            position: absolute;
+            top:15%;
+            left: 40.3%;
+
+            &__Img{
+                width: 40px;
+                height: 40px;
+            }
+            &__Img:hover{
+                transform: scale(1.15);
+            }
+        }
+        &__Daejeon{
+            position: absolute;
+            top:34.5%;
+            left: 43.5%;
+
+            &__Img{
+                width: 40px;
+                height: 40px;
+            }
+            &__Img:hover{
+                transform: scale(1.15);
+            }
+        }
+        &__Gwangju{
+            position: absolute;
+            top:53%;
+            left: 38.5%;
+
+            &__Img{
+                width: 40px;
+                height: 40px;
+            }
+            &__Img:hover{
+                transform: scale(1.15);
+            }
+        }
+        &__Gumi{
+            position: absolute;
+            top:40%;
+            left: 52%;
+
+            &__Img{
+                width: 40px;
+                height: 40px;
+            }
+            &__Img:hover{
+                transform: scale(1.15);
+            }
+        }
+        &__Busan{
+            position: absolute;
+            top:52%;
+            left: 59.5%;
+
+            &__Img{
+                width: 40px;
+                height: 40px;
+            }
+            &__Img:hover{
+                transform: scale(1.15);
+            }
+        }
+    }
+}

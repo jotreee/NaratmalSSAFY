@@ -1,0 +1,11 @@
+TargetFONT.ttf
+__pycache__/
+*.py[cod]
+*.npz
+cookie
+download
+*.jpg
+FONT
+*.ipynb
+download.sh
+CVS

@@ -1,0 +1,198 @@
+.Post{
+    min-height: 100vh;
+    height:auto;
+    &__Title{
+        margin-top: 100px;
+        &__Title{
+            font-size: xx-large;
+            font-weight: bold;
+            margin-bottom: 3%;
+        }
+        &__Content{
+            margin-bottom: 10px;
+        }
+        &__Content1{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            &__2{
+                font-size: small;
+                display: flex;
+            }
+        }
+    }
+    &__FontEmpty{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__Title{
+            font-size: xx-large;
+            font-weight: bold;
+            margin-bottom: 5%;
+        }
+        &__Content{
+            font-size: large;
+            margin-bottom: 10px;
+        }
+        &__Button{
+            font-size: large;
+            font-weight: bold;
+            margin-top: 3%;
+            text-align: center;
+            cursor: pointer;
+            max-width: 350px;
+            width: 80%;
+            height: 42px;
+            line-height: 42px;
+            background-color: #8383d3;
+            color: black;
+            border-radius: 10px;
+        }
+    }
+    &__PostEmpty{
+        margin-top: 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__Title{
+            font-size: xx-large;
+            font-weight: bold;
+            margin-bottom: 5%;
+        }
+        &__Content{
+            font-size: large;
+            margin-bottom: 10px;
+        }
+        &__Button{
+            font-size: large;
+            font-weight: bold;
+            margin-top: 3%;
+            text-align: center;
+            cursor: pointer;
+            max-width: 350px;
+            width: 80%;
+            height: 42px;
+            line-height: 42px;
+            background-color: #8383d3;
+            color: black;
+            border-radius: 10px;
+        }
+    }
+    &__Card{
+        height:auto;
+    }
+    &__Back{
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        background-color: #8383d3;
+        color: black;
+        border-radius: 10px;
+    }
+    &__Create{
+        margin-left: 20px;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        background-color: #8383d3;
+        color: black;
+        border-radius: 10px;
+    }
+}
+.Modal{
+    z-index: 1;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    background-color: #f4f1e0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3),
+    0 4px 6px 5px rgba(0, 0, 0, 0.6);
+
+    &__Body{
+        margin:3%;
+        display: flex;
+        flex-flow: column;
+    }
+    &__Top{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        &__Title{
+            font-size: x-large;
+            font-weight: bold;
+            margin: 1%; 
+        }
+        &__Button{
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            &__Close{
+                margin-left: 20px;
+                font-weight: bold;
+                text-align: center;
+                cursor: pointer;
+                width: 38px;
+                height: 38px;
+                line-height: 38px;
+                background-color: #8383d3;
+                color: black;
+                border-radius: 10px;
+            }
+            &__Make{
+                margin-left: 20px;
+                font-weight: bold;
+                text-align: center;
+                cursor: pointer;
+                width: 38px;
+                height: 38px;
+                line-height: 38px;
+                background-color: #8383d3;
+                color: black;
+                border-radius: 10px;
+            }
+        }
+    }
+    &__Title{
+        margin: 1%; 
+        width: 98%;
+        height: 30px;
+        font-size: large;
+        border-style: none;
+    }
+    &__Content{
+        margin: 1%; 
+        width: 98%;
+        height: 130px;
+        font-size: large;
+        border-style: none;
+    }
+    &__Select{
+        z-index:100;
+    }
+    &__Space{
+        margin:1%;
+    }
+    
+}
+.Colorexample{
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+.menuitems{
+    width: 100px !important;
+    display: flex !important;
+    flex-flow: row !important;
+}

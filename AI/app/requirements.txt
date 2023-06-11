@@ -1,0 +1,7 @@
+uvicorn
+fastapi
+fastapi-sqlalchemy
+pymysql
+pillow
+boto3==1.23.10
+SQLAlchemy==1.4.43
